@@ -14,32 +14,6 @@ import org.junit.runners.Parameterized.Parameters;
 
 public class OrdinariaENDETest {
 
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
-
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
-
-	@Before
-	public void setUp() throws Exception {
-	}
-
-	@After
-	public void tearDown() throws Exception {
-	}
-
-	@Test
-	public void testEsPalindromo() {
-		fail("Not yet implemented");
-		
-	}
-	@Test
-	public void testQuitarAcentos() {
-		fail("Not yet implemented");
-	}
-
 	
 	@Parameters
     public static Collection<Object[]> testData() {
@@ -53,7 +27,12 @@ public class OrdinariaENDETest {
         });
     }
     
-    @SuppressWarnings("static-access")
+    public static void main(String[] args) {
+    //me falta crear algo para llamar a las cosas
+    }
+    
+
+	@SuppressWarnings("static-access")
 	@Test
     public void procesarfrase1Test(String palabra) {
        OrdinariaENDE frase = new OrdinariaENDE();
@@ -101,6 +80,6 @@ public class OrdinariaENDETest {
       }
 
 	
-	
+    
 
 }
